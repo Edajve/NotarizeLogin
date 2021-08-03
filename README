@@ -1,1 +1,16 @@
+This is a BDD Framework using Java, Selenium, Cucumber, Maven, and JUnit.
+It also uses WebDriverManager dependency to set up driver for UI automation.
+The execution point is Notarize/src/test/java/runner/TestRunner class
+When you trigger the execution in the TestRunner class,
+it reads the scenario steps from Notarize/src/test/resources/feature/Login.feature file
+and it finds the actual code implementation in the Notarize/src/test/java/steps/LoginSteps class.
+It also finds the tag defined in the runner class in the feature file.
+After executing all the scenarios, it creates a HTML report under Notarize/target/cucumber-reports/index.html file.
+To be able to see the reports after execution, right click on the index.html file, Open In > Browser > Chrome.
+This will show you the reports for the execution.
 
+NOTE: Everything is defined in the runner class with CucumberOptions tag, in that we have
+features which states where the feature files are,
+tag which states which scenarios to be executed,
+glue which states where the step implementations are,
+plugin to define what kind of reports will be executed after execution.

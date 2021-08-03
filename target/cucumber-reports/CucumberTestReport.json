@@ -1,0 +1,1188 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3032449338,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"https://app.notarize.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.notarize.com/login",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.user_is_on(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7274007490,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validate login page",
+        "description": "",
+        "id": "notarize-login-functionality;validate-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 307799004,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1501421514,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "page title should be displayed as \"Notarize | Login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Notarize | Login",
+                  "offset": 35
+                }
+              ],
+              "location": "LoginSteps.page_title_should_be_displayed_as(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 210023396,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should see \"Welcome back!\" header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Welcome back!",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.user_should_see_header(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70950275,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should see \"Sign into your signer account\" header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sign into your signer account",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.user_should_see_header(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 70961642,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user should see email address input box",
+            "match": {
+              "location": "LoginSteps.user_should_see_email_address_input_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203570645,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user should see \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.user_should_see_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71498534,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user should see \"Sign up\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sign up",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.user_should_see_link(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 156145654,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user should see \"Sign In With Google\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sign In With Google",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.user_should_see_button(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6224991372,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"https://app.notarize.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.notarize.com/login",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.user_is_on(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3842578723,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Validate successful login with valid credentials",
+        "description": "",
+        "id": "notarize-login-functionality;validate-successful-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 212860410,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4227886806,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user types \"dechols87@gmail.com\" to \"email\" input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dechols87@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "email",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginSteps.user_types_to_input_box(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3176603792,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user clicks on \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_clicks_on_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2173296194,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user types \"Justapassword123!\" to \"password\" input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Justapassword123!",
+                  "offset": 12
+                },
+                {
+                  "val": "password",
+                  "offset": 35
+                }
+              ],
+              "location": "LoginSteps.user_types_to_input_box(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 500326933,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user clicks on \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_clicks_on_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5660704510,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user clicks \"Confirm\" button on the illustration modal if displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Confirm",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginSteps.user_clicks_button_on_the_illustration_modal_if_displayed(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2634226116,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user clicks \"Skip\" button on the illustration modal if displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Skip",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginSteps.user_clicks_button_on_the_illustration_modal_if_displayed(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 652649883,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "page title should be updated to \"Prepare Documents - Notarize\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Prepare Documents - Notarize",
+                  "offset": 33
+                }
+              ],
+              "location": "LoginSteps.page_title_should_be_updated_to(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7032669484,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"https://app.notarize.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.notarize.com/login",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.user_is_on(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3028814195,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Validate Email Is Required error message",
+        "description": "",
+        "id": "notarize-login-functionality;validate-email-is-required-error-message",
+        "after": [
+          {
+            "result": {
+              "duration": 241491535,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 753890632,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user activates email input box",
+            "match": {
+              "location": "LoginSteps.user_activates_email_input_box()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 184598911,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user leaves input box without providing any information",
+            "match": {
+              "location": "LoginSteps.user_leaves_input_box_without_providing_any_information()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91497376,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "\"Email Is Required\" message should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email Is Required",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.message_should_be_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4072124115,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"https://app.notarize.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.notarize.com/login",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.user_is_on(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5513354763,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Validate Email Appears To Be Invalid error message",
+        "description": "",
+        "id": "notarize-login-functionality;validate-email-appears-to-be-invalid-error-message",
+        "after": [
+          {
+            "result": {
+              "duration": 254129833,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4422590965,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user types \"dechols87@gmail.com\" to \"email\" input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dechols87@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "email",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginSteps.user_types_to_input_box(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1265682631,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user deletes a portion of the email and leaves input box",
+            "match": {
+              "location": "LoginSteps.user_deletes_a_portion_of_the_email_and_leaves_input_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174137606,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "\"Email Appears To Be Invalid\" message should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Email Appears To Be Invalid",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.message_should_be_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5466711853,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"https://app.notarize.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.notarize.com/login",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.user_is_on(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5102809724,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Validate Sign up link",
+        "description": "",
+        "id": "notarize-login-functionality;validate-sign-up-link",
+        "after": [
+          {
+            "result": {
+              "duration": 205742850,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7644797713,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user clicks on \"Sign up\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sign up",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.userClicksOnLink(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 108124558,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user should see \"Get Started With Notarize\" header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Get Started With Notarize",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginSteps.user_should_see_header(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14703304,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "page title should be updated to \"Pricing | Legally Notarize Your Documents Online. Anytime. Anywhere.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pricing | Legally Notarize Your Documents Online. Anytime. Anywhere.",
+                  "offset": 33
+                }
+              ],
+              "location": "LoginSteps.page_title_should_be_updated_to(String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6522586477,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"https://app.notarize.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.notarize.com/login",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.user_is_on(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6460630884,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "Validate * Email or password invalid error message",
+        "description": "",
+        "id": "notarize-login-functionality;validate-*-email-or-password-invalid-error-message",
+        "after": [
+          {
+            "result": {
+              "duration": 271788598,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 448592411,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user types \"dechols87@gmail.com\" to \"email\" input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dechols87@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "email",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginSteps.user_types_to_input_box(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 546591042,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user clicks on \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_clicks_on_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1105692153,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user types \"abcd1234\" to \"password\" input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd1234",
+                  "offset": 12
+                },
+                {
+                  "val": "password",
+                  "offset": 26
+                }
+              ],
+              "location": "LoginSteps.user_types_to_input_box(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 320908438,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user clicks on \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_clicks_on_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 677208242,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "\"* Email or password invalid\" message should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "* Email or password invalid",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.message_should_be_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1669113685,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"https://app.notarize.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.notarize.com/login",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.user_is_on(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3570718295,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "Validate Forgot password? link",
+        "description": "",
+        "id": "notarize-login-functionality;validate-forgot-password?-link",
+        "after": [
+          {
+            "result": {
+              "duration": 170483724,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1170237217,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user types \"dechols87@gmail.com\" to \"email\" input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dechols87@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "email",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginSteps.user_types_to_input_box(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 483303946,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user clicks on \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_clicks_on_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 206049526,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user clicks on \"Forgot password?\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Forgot password?",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.userClicksOnLink(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53603173,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user should see email address input box",
+            "match": {
+              "location": "LoginSteps.user_should_see_email_address_input_box()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1698895370,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on \"https://app.notarize.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.notarize.com/login",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginSteps.user_is_on(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2848000307,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 53,
+        "name": "Validate the Back button works properly after clicking Forgot password? link",
+        "description": "",
+        "id": "notarize-login-functionality;validate-the-back-button-works-properly-after-clicking-forgot-password?-link",
+        "after": [
+          {
+            "result": {
+              "duration": 174009773,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1486762223,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user types \"dechols87@gmail.com\" to \"email\" input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dechols87@gmail.com",
+                  "offset": 12
+                },
+                {
+                  "val": "email",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginSteps.user_types_to_input_box(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 478812438,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "user clicks on \"Continue\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Continue",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.user_clicks_on_button(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 239747401,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user clicks on \"Forgot password?\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Forgot password?",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.userClicksOnLink(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75816223,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user clicks on \"Back\" link",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Back",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.userClicksOnLink(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12247456,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "page title should be displayed as \"Notarize | Login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Notarize | Login",
+                  "offset": 35
+                }
+              ],
+              "location": "LoginSteps.page_title_should_be_displayed_as(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "Notarize Login Functionality",
+    "description": "",
+    "id": "notarize-login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/LoginPage.feature"
+  }
+]

@@ -551,3 +551,80 @@ formatter.background({
   "description": "",
   "keyword": "Background"
 });
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on \"https://app.notarize.com/login\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "LoginSteps.user_is_on(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Validate the Back button works properly after clicking Forgot password? link",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Login"
+    }
+  ]
+});
+formatter.step({
+  "name": "user types \"dechols87@gmail.com\" to \"email\" input box",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginSteps.user_types_to_input_box(String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on \"Continue\" button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LoginSteps.user_clicks_on_button(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on \"Forgot password?\" link",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "LoginSteps.userClicksOnLink(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on \"Back\" link",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "LoginSteps.userClicksOnLink(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "page title should be displayed as \"Notarize | Login\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "LoginSteps.page_title_should_be_displayed_as(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+});
